@@ -14,6 +14,5 @@ class GamesController < ApplicationController
     word_counts = if can_be_made
     end
     wrong_msg = "Sorry but #{@word} can't be built out of #{@letters}"
-    {"message":@word,"endpoints":["https://dictionary.lewagon.com/:word","https://dictionary.lewagon.com/autocomplete/:stem"],"total_api_hits":97485,"words_found":22889,"autocomplete_hits":27391}
   end
 end
