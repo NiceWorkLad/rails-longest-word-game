@@ -5,9 +5,9 @@
     <h1 class="col-1 shadow-sm p-3 mb-5 bg-body rounded m-2"><%= letter %></h1>
   <% end %>
 </div>
-<form action="score" method="Gamesscore" data-turbo="false">
-<input type="text">
-<input type="submit" value="play">
+<form action="score" data-turbo="false">
 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<input type="text" name="word">
+<input type="submit" value="play">
 </form>
 </div>
